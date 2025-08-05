@@ -156,13 +156,15 @@
               }
             }
           }
-        },
-        {
-          "title": "Lists",
-          "id": "lists",
-          "path": "./blocks/lists"
         }
       ]
+    }
+  ],
+  "blocks": [
+    {
+      "title": "Lists",
+      "id": "lists",
+      "path": "./blocks/lists"
     }
   ]
 }
