@@ -159,7 +159,8 @@
         },
         {
           "title": "Lists",
-          "path": "./site/blocks/lists"
+          "id": "lists",
+          "path": "./blocks/lists"
         }
       ]
     }

@@ -214,5 +214,45 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "list",
+    "title": "List",
+    "description": "A customizable list block with support for single-level nested items.",
+    "fields": [
+      {
+        "name": "items",
+        "type": "array",
+        "label": "Items",
+        "itemFields": [
+          {
+            "name": "text",
+            "type": "string",
+            "label": "Item Text"
+          },
+          {
+            "name": "children",
+            "type": "array",
+            "label": "Child Items (optional)",
+            "itemFields": [
+              {
+                "name": "text",
+                "type": "string",
+                "label": "Child Item Text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "variant",
+        "type": "select",
+        "label": "List Type",
+        "items": [
+          { "label": "Bulleted", "value": "ul" },
+          { "label": "Numbered", "value": "ol" }
+        ]
+      }
+    ]
   }
 ]

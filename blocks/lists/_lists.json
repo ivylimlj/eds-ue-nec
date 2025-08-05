@@ -1,13 +1,29 @@
 {
-  "title": "Lists",
-  "id": "lists",
+  "title": "List",
+  "id": "list",
   "fields": [
     {
       "name": "items",
       "type": "array",
-      "label": "List Items",
+      "label": "Items",
       "itemFields": [
-        {"name": "text", "type": "string", "label": "List Item Text"}
+        {
+          "name": "text",
+          "type": "string",
+          "label": "Item Text"
+        },
+        {
+          "name": "children",
+          "type": "array",
+          "label": "Child Items (optional)",
+          "itemFields": [
+            {
+              "name": "text",
+              "type": "string",
+              "label": "Child Item Text"
+            }
+          ]
+        }
       ]
     },
     {
@@ -15,8 +31,8 @@
       "type": "select",
       "label": "List Type",
       "items": [
-        {"label": "Bulleted", "value": "ul"},
-        {"label": "Numbered", "value": "ol"}
+        { "label": "Bulleted", "value": "ul" },
+        { "label": "Numbered", "value": "ol" }
       ]
     }
   ]

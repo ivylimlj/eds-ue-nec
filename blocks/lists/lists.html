@@ -1,5 +1,14 @@
-<{{variant || 'ul'}}>
+<{{variant || 'ul'}} class="ue-list">
 {{#each items}}
-<li>{{text}}</li>
+<li>
+    {{text}}
+    {{#if children.length}}
+    <ul>
+        {{#each children}}
+        <li>{{text}}</li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</li>
 {{/each}}
 </{{variant || 'ul'}}>
