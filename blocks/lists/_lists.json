@@ -1,6 +1,6 @@
 {
-  "title": "List",
-  "id": "list",
+  "title": "Lists",
+  "id": "lists",
   "fields": [
     {
       "name": "items",

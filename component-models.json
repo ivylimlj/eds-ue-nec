@@ -216,8 +216,8 @@
     ]
   },
   {
-    "id": "list",
-    "title": "List",
+    "id": "lists",
+    "title": "Lists",
     "description": "A customizable list block with support for single-level nested items.",
     "fields": [
       {
