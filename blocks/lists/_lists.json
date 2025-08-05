@@ -1,0 +1,23 @@
+{
+  "title": "Lists",
+  "id": "lists",
+  "fields": [
+    {
+      "name": "items",
+      "type": "array",
+      "label": "List Items",
+      "itemFields": [
+        {"name": "text", "type": "string", "label": "List Item Text"}
+      ]
+    },
+    {
+      "name": "variant",
+      "type": "select",
+      "label": "List Type",
+      "items": [
+        {"label": "Bulleted", "value": "ul"},
+        {"label": "Numbered", "value": "ol"}
+      ]
+    }
+  ]
+}
